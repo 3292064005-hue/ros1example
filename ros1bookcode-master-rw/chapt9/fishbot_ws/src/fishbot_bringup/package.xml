@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fishbot_bringup</name>
+  <version>0.0.0</version>
+  <description>ROS1 fishbot bringup package</description>
+  <maintainer email="87068644+fishros@users.noreply.github.com">fishros</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>fishbot_description</exec_depend>
+  <exec_depend>ros_serial2wifi</exec_depend>
+  <exec_depend>ydlidar_ros</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  </package>

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(chapt4_interfaces)
+find_package(catkin REQUIRED COMPONENTS message_generation sensor_msgs)
+add_service_files(FILES FaceDetector.srv Patrol.srv)
+generate_messages(DEPENDENCIES sensor_msgs)
+catkin_package(CATKIN_DEPENDS message_runtime sensor_msgs)

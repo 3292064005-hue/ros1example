@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>demo_python_service</name>
+  <version>0.0.0</version>
+  <description>ROS1 python service demos</description>
+  <maintainer email="87068644+fishros@users.noreply.github.com">fishros</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <exec_depend>rospy</exec_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>rospkg</build_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>rospkg</exec_depend>
+  <build_depend>cv_bridge</build_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <build_depend>chapt4_interfaces</build_depend>
+  <exec_depend>chapt4_interfaces</exec_depend>
+</package>

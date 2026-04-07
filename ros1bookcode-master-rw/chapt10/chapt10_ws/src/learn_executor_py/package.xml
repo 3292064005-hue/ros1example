@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>learn_executor_py</name>
+  <version>0.0.0</version>
+  <description>ROS1 migrated package learn_executor_py</description>
+  <maintainer email="87068644+fishros@users.noreply.github.com">fishros</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+
+</package>

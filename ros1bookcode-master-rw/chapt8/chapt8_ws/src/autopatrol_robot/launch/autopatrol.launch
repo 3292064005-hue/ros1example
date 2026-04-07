@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find autopatrol_robot)/config/patrol_config.yaml" />
+  <node pkg="autopatrol_robot" type="speaker.py" name="speaker" output="screen" />
+  <node pkg="autopatrol_robot" type="patrol_node.py" name="patrol_node" output="screen">
+    <param name="image_save_path" value="$(env HOME)/autopatrol_images/" />
+  </node>
+</launch>

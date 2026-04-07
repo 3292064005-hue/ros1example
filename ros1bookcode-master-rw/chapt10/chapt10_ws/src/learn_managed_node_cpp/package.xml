@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>learn_managed_node_cpp</name>
+  <version>0.0.0</version>
+  <description>ROS1 managed-node state machine demo in C++.</description>
+  <maintainer email="87068644+fishros@users.noreply.github.com">fishros</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+</package>

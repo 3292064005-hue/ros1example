@@ -1,0 +1,10 @@
+# ROS1 示例 CMake 片段（保留为教材参考，不参与 catkin 构建）
+cmake_minimum_required(VERSION 3.0.2)
+project(ros1_cpp_node_example)
+
+find_package(catkin REQUIRED COMPONENTS roscpp)
+catkin_package()
+include_directories(${catkin_INCLUDE_DIRS})
+
+add_executable(ros1_cpp_node ros1_cpp_node.cpp)
+target_link_libraries(ros1_cpp_node ${catkin_LIBRARIES})

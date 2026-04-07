@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find fishbot_bringup)/launch/urdf2tf.launch" />
+  <node pkg="fishbot_bringup" type="odom2tf" name="odom2tf" output="screen" />
+  <node pkg="ros_serial2wifi" type="tcpserver.py" name="tcp_server" output="screen">
+    <param name="serial_port" value="/tmp/tty_laser" />
+    <param name="tcp_port" value="8889" />
+  </node>
+  <include file="$(find ydlidar_ros)/launch/ydlidar.launch" />
+</launch>

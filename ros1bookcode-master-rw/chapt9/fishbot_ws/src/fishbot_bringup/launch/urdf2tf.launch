@@ -1,0 +1,6 @@
+<launch>
+  <arg name="model" default="$(find fishbot_description)/urdf/fishbot.urdf" />
+  <param name="robot_description" textfile="$(arg model)" />
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" />
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen" />
+</launch>

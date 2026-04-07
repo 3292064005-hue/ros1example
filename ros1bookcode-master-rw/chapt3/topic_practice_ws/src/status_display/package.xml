@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>status_display</name>
+  <version>0.0.0</version>
+  <description>Qt system status display</description>
+  <maintainer email="87068644+fishros@users.noreply.github.com">fishros</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <build_depend>status_interfaces</build_depend>
+  <exec_depend>status_interfaces</exec_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <exec_depend>qtbase5-dev</exec_depend>
+</package>

@@ -1,0 +1,7 @@
+<library path="lib/libcustom_local_planner">
+  <class name="custom_local_planner/CustomLocalPlanner"
+         type="custom_local_planner::CustomLocalPlanner"
+         base_class_type="nav_core::BaseLocalPlanner">
+    <description>Simple local planner for ROS1 move_base.</description>
+  </class>
+</library>

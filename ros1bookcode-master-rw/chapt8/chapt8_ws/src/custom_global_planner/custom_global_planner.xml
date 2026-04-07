@@ -1,0 +1,7 @@
+<library path="lib/libcustom_global_planner">
+  <class name="custom_global_planner/CustomGlobalPlanner"
+         type="custom_global_planner::CustomGlobalPlanner"
+         base_class_type="nav_core::BaseGlobalPlanner">
+    <description>Simple straight-line global planner for ROS1 move_base.</description>
+  </class>
+</library>

@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="demo_python_service" type="face_detect_node.py" name="face_detection_node" output="screen">
+    <param name="face_locations_upsample_times" value="1"/>
+    <param name="face_locations_model" value="hog"/>
+  </node>
+  <node pkg="demo_python_service" type="face_detect_client_node.py" name="face_detect_client" output="screen"/>
+</launch>

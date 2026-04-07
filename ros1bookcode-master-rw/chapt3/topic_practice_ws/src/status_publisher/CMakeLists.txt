@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(status_publisher)
+find_package(catkin REQUIRED COMPONENTS rospy status_interfaces)
+catkin_python_setup()
+catkin_package(CATKIN_DEPENDS rospy status_interfaces)
+catkin_install_python(PROGRAMS status_publisher/sys_status_pub.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

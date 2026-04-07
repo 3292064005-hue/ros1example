@@ -1,0 +1,3 @@
+<launch>
+  <include file="$(find demo_cpp_service)/launch/demo.launch"/>
+</launch>

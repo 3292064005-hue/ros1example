@@ -1,0 +1,4 @@
+CustomController:
+  max_linear_speed: 0.26
+  max_angular_speed: 1.0
+  lookahead_dist: 0.35

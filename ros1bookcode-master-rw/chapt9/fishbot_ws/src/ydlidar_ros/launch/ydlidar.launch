@@ -1,0 +1,4 @@
+<launch>
+  <rosparam command="load" file="$(find ydlidar_ros)/params/ydlidar.yaml" />
+  <node pkg="ydlidar_ros" type="ydlidar_node" name="ydlidar_node" output="screen" />
+</launch>

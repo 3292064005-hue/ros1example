@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>learn_git</name>
+  <version>0.0.0</version>
+  <description>placeholder catkin package for chapter5 notes</description>
+  <maintainer email="87068644+fishros@users.noreply.github.com">fishros</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

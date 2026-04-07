@@ -1,0 +1,16 @@
+<launch>
+  <arg name="map" default="$(find fishbot_navigation)/maps/room.yaml" />
+  <node pkg="map_server" type="map_server" name="map_server" args="$(arg map)" output="screen" />
+  <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <rosparam file="$(find fishbot_navigation)/config/amcl_params.yaml" command="load" />
+  </node>
+  <node pkg="move_base" type="move_base" name="move_base" output="screen">
+    <param name="base_global_planner" value="navfn/NavfnROS" />
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+    <rosparam file="$(find fishbot_navigation)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find fishbot_navigation)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find fishbot_navigation)/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find fishbot_navigation)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find fishbot_navigation)/config/base_local_planner_params.yaml" command="load" />
+  </node>
+</launch>
