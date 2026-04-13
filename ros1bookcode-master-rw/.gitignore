@@ -1,6 +1,9 @@
 install/
 build/
+devel/
 log/
 CMakeFiles/
 CMakeCache.txt
+.catkin_workspace
+chapt*/*_ws/src/CMakeLists.txt
 *.out

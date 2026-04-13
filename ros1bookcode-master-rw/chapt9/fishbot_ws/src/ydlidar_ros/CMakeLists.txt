@@ -16,6 +16,10 @@ set(YDLIDAR_SDK_SOURCES
   sdk/src/YDlidarDriver.cpp
   sdk/src/ydlidar_sdk.cpp
   sdk/src/filters/NoiseFilter.cpp
+  sdk/src/filters/StrongLightFilter.cpp
+  sdk/core/base/timer.cpp
+  sdk/core/common/ydlidar_def.cpp
+  sdk/core/json/cJSON.c
   sdk/core/network/ActiveSocket.cpp
   sdk/core/network/PassiveSocket.cpp
   sdk/core/network/SimpleSocket.cpp
@@ -38,6 +42,7 @@ endif()
 include_directories(
   ${catkin_INCLUDE_DIRS}
   .
+  sdk
   sdk/core
   sdk/src
   sdk/core/base

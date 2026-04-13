@@ -1,10 +1,11 @@
-#include "src/CYdLidar.h"
+#include "CYdLidar.h"
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
 #include <sensor_msgs/PointCloud.h>
 #include <geometry_msgs/Point32.h>
 #include <std_srvs/Empty.h>
 #include <cmath>
+#include <limits>
 #include <string>
 
 #define ROS1_VERSION_STR "ros1-migrated"
