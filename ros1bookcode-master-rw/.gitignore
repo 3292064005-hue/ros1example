@@ -1,10 +1,33 @@
-install/
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ROS / catkin generated spaces
 build/
 devel/
+install/
 log/
-CMakeFiles/
-CMakeCache.txt
+build_isolated/
+devel_isolated/
+install_isolated/
 .catkin_workspace
+.catkin_tools/
 chapt*/*_ws/src/CMakeLists.txt
 chapt8/learn_pluginlib/src/CMakeLists.txt
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Local binaries and editor state
 *.out
+*.log
+.vscode/
+chapt1/Makefile
+chapt1/learn_cmake

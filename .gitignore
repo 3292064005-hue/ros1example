@@ -1,0 +1,3 @@
+# Workspace-local editor files
+.vscode/*
+!.vscode/settings.json
