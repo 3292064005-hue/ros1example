@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
       controller_loader("motion_control_system",
                         "motion_control_system::MotionController");
   // 2.使用加载器加载指定名称的插件，返回的是指定插件类的对象的指针
-  auto controller = controller_loader.createSharedInstance(controller_name);
+  auto controller = controller_loader.createInstance(controller_name);
   // 3.调用插件的方法
   controller->start();
   controller->stop();

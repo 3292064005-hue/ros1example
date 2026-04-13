@@ -6,4 +6,5 @@ CMakeFiles/
 CMakeCache.txt
 .catkin_workspace
 chapt*/*_ws/src/CMakeLists.txt
+chapt8/learn_pluginlib/src/CMakeLists.txt
 *.out

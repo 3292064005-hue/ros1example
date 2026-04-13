@@ -6,4 +6,6 @@ catkin_package(CATKIN_DEPENDS rospy std_msgs)
 catkin_install_python(PROGRAMS
   demo_python_topic/novel_pub_node.py
   demo_python_topic/novel_sub_node.py
+  demo_python_topic/param_status_node.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

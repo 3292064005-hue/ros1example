@@ -1,0 +1,15 @@
+<launch>
+  <arg name="x" default="1.0" />
+  <arg name="y" default="0.0" />
+  <arg name="yaw" default="0.0" />
+  <arg name="frame_id" default="map" />
+  <arg name="wait_timeout" default="10.0" />
+
+  <node pkg="fishbot_application" type="nav_to_pose.py" name="nav_to_pose" output="screen">
+    <param name="x" value="$(arg x)" />
+    <param name="y" value="$(arg y)" />
+    <param name="yaw" value="$(arg yaw)" />
+    <param name="frame_id" value="$(arg frame_id)" />
+    <param name="wait_timeout" value="$(arg wait_timeout)" />
+  </node>
+</launch>

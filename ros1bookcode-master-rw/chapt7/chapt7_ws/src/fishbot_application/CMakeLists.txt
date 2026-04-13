@@ -9,3 +9,4 @@ catkin_install_python(PROGRAMS
   fishbot_application/nav_to_pose.py
   fishbot_application/waypoint_follower.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

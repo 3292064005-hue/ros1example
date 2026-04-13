@@ -1,0 +1,13 @@
+<launch>
+  <arg name="robot_name" default="fishbot" />
+  <arg name="message" default="ready" />
+  <arg name="rate" default="1.0" />
+  <arg name="topic" default="/demo/param_status" />
+
+  <node pkg="demo_python_topic" type="param_status_node.py" name="param_status_node" output="screen">
+    <param name="robot_name" value="$(arg robot_name)" />
+    <param name="message" value="$(arg message)" />
+    <param name="rate" value="$(arg rate)" />
+    <param name="topic" value="$(arg topic)" />
+  </node>
+</launch>
